@@ -74,6 +74,10 @@ nav img {
   border-radius: 50%;
 }
 
+nav input {
+  display: none;
+}
+
 /* Navbar Side */
 
 /* Header Side */
