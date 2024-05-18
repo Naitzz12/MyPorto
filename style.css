@@ -115,7 +115,7 @@ nav .bar {
   bottom: 120px;
   rotate: -50deg;
   background-color: var(--col-3);
-  z-index: -99;
+  z-index: -9;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -156,9 +156,10 @@ nav .bar {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  margin-top: 250px;
   position: relative;
   overflow: hidden;
+  padding-top: 60px;
 }
 
 .about::before {
@@ -197,7 +198,7 @@ nav .bar {
 /* Project Side */
 
 .project {
-  padding-top: 170px;
+  margin-top: 170px;
 }
 
 .project h1 {
@@ -236,6 +237,27 @@ nav .bar {
   flex-direction: row-reverse;
 }
 
+.pl-body3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.pl-text3 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pl-text3 p {
+  width: 700px;
+  font-family: var(--f-4);
+  letter-spacing: 1px;
+}
+
 .pl-text {
   display: flex;
   justify-content: center;
@@ -252,7 +274,8 @@ nav .bar {
   flex-direction: column;
 }
 
-.pl-text a {
+.pl-text a,
+.pl-text3 a {
   font-family: var(--f-2);
   text-decoration: none;
   background-color: var(--col-2);
@@ -270,12 +293,14 @@ nav .bar {
   color: var(--col);
 }
 
-.pl-text h3 {
+.pl-text h3,
+.pl-text3 h3 {
   font-family: var(--f-2);
   position: relative;
 }
 
-.pl-text h3::after {
+.pl-text h3::after,
+.pl-text3 h3::after {
   position: absolute;
   content: "";
   top: 23px;
@@ -285,6 +310,10 @@ nav .bar {
   height: 3px;
   width: 90px;
   border-radius: 20px;
+}
+
+.pl-text3 p {
+  text-align: end;
 }
 
 .pl-text2 h3 {
@@ -500,22 +529,26 @@ footer h2 {
   }
 
   .pl-body1,
-  .pl-body2 {
+  .pl-body2,
+  .pl-body3 {
     flex-direction: column;
   }
 
   .pl-body1 img,
-  .pl-body2 img {
+  .pl-body2 img,
+  .pl-body3 img {
     width: 300px;
   }
 
   .pl-text,
-  .pl-text2 {
+  .pl-text2,
+  .pl-text3 {
     align-items: center;
   }
 
   .pl-text h3::after,
-  .pl-text2 h3::after {
+  .pl-text2 h3::after,
+  .pl-text3 h3::after {
     left: 0;
     right: 0;
     display: flex;
@@ -525,14 +558,16 @@ footer h2 {
   }
 
   .pl-text p,
-  .pl-text2 p {
+  .pl-text2 p,
+  .pl-text3 p {
     font-size: 10px;
     width: 300px;
     text-align: center;
   }
 
   .pl-text a,
-  .pl-text2 a {
+  .pl-text2 a,
+  .pl-text3 a {
     font-size: 14px;
   }
 
