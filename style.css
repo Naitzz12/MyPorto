@@ -37,7 +37,11 @@ nav {
   z-index: 999;
 }
 
-nav h2 {
+.top-name {
+  font-size: xx-large;
+}
+
+nav a {
   font-family: var(--f-2);
 }
 
